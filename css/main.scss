@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,500,700&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,500,700&subset=cyrillic,cyrillic-ext');
+$FiraSansFont: 'Fira Sans', sans-serif;
+$FiraSansCondensedFont: 'Fira Sans Condensed', sans-serif;
+$FiraSansExtraCondensedFont: 'Fira Sans Extra Condensed', sans-serif;
+
+$mainColor: #202351;
+$mainColorHover: #181832;
+
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+body {
+  font-family: $FiraSansFont;
+}
+
+.wrap {
+  min-width: 576px;
+}
+
+.mainBtn {
+  background: $mainColor;
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+  font-family: $FiraSansExtraCondensedFont;
+  text-transform: uppercase;
+  padding: 14px 24px 13px 24px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background: $mainColorHover;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.topHeader {
+  background: $mainColor;
+  color: #ffffff;
+  min-height: 60px;
+  .topHeaderRow {
+    min-height: 60px;
+    .socialBtns {
+      font-size: 24px;
+      a {
+        color: #ffffff;
+        margin-right: 15px;
+      }
+    }
+    .address {
+      font-size: 14px;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .separator {
+      min-height: 60px;
+      background: #373963;
+      width: 1px;
+      margin: 0 26px 0 26px;
+    }
+    .phone {
+      font-size: 24px;
+      font-family: $FiraSansExtraCondensedFont;
+      font-weight: 400;
+      letter-spacing: 0.6px;
+    }
+  }
+}
+
+.navigation {
+  min-height: 60px;
+  ul {
+    min-height: 60px;
+    margin: 0;
+    li {
+      margin: 0 51px;
+      @media screen and (max-width: $xl) {
+        margin: 0 21px;
+      }
+      a {
+        color: $mainColor;
+        font-family: $FiraSansExtraCondensedFont;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+      }
+    }
+  }
+}
+
+.slide {
+  height: 550px;
+  min-height: 550px;
+  .slideImg {
+    object-fit: cover;
+    width: 100%;
+    img {
+      width: 100%;
+      max-height: 550px;
+      min-height: 550px;
+    }
+  }
+  .slideBody {
+    height: 550px;
+    margin-top: -550px;
+    color: #ffffff;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 500px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $FiraSansExtraCondensedFont;
+    padding-bottom: 67px;
+    .title {
+      font-size: 24px;
+      margin: 7px 0 34px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 20px;
+    }
+    button {
+      margin-top: 2px;
+    }
+  }
+}
+
+.afterSlide {
+  margin-top: -40px;
+  z-index: 1;
+  position: relative;
+  .item {
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #212121;
+      margin-bottom: 50px;
+      font-family: $FiraSansExtraCondensedFont;
+    }
+    .text {
+      font-size: 14px;
+      color: #555555;
+      margin-bottom: 100px;
+    }
+  }
+  .itemBtnControl {
+    margin-top: -60px;
+    padding: 0 20px;
+    .mainBtn {
+      font-family: $FiraSansFont;
+      font-weight: 400;
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      line-height: 42px;
+      padding: 0 0 0 20px;
+      text-align: left;
+      i {
+        float: right;
+        margin: 12px;
+      }
+    }
+  }
+
+}
+
+.videoBlock {
+  margin: 70px 0;
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    margin-bottom: 38px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+
+.cards {
+  .item {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    .itemImg {
+      img {
+        width: 100%;
+      }
+    }
+    .itemContent {
+      padding: 0 30px 80px 30px;
+
+      .title {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 50px 0 30px 0;
+
+      }
+      .text {
+        font-size: 16px;
+      }
+      .controls {
+        a {
+          position: absolute;
+          bottom: 30px;
+          text-transform: uppercase;
+          color: #202351;
+          font-size: 14px;
+          i {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.iconsLinks {
+  margin: 80px 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      border-right: 1px solid #dddddd;
+      padding:  20px;
+      width: 24.5%;
+      @media screen and (max-width: $lg) {
+        width: 49%;
+        border-right: 0;
+      }
+      a {
+        display: inline-block;
+        text-align: center;
+        color: #202351;
+        font-size: 36px;
+        font-family: $FiraSansExtraCondensedFont;
+        font-weight: 600;
+        i {
+          display: block;
+          font-size: 60px;
+          color: #999dcf;
+        }
+        &:hover {
+          color: #999dcf;
+          text-decoration: none;
+          i {
+            color: #202351;
+          }
+        }
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.forestBlock {
+  height: 250px;
+  img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.section {
+  margin-bottom: 80px;
+  .title {
+    text-align: center;
+    font-family: $FiraSansExtraCondensedFont;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 40px 0;
+    color: #002121;
+    &::after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      display: block;
+      background: #002121;
+      margin-top: -25px;
+      margin-bottom: 60px;
+    }
+    span {
+      background: #ffffff;
+      padding: 0 20px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .sectionContent {
+    .titleContent {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 50px;
+      color: #212121;
+    }
+    .text {
+      color: #555555;
+    }
+  }
+  .controlsBts {
+    text-align: center;
+    margin: 40px 0;
+    button {
+      margin: 0 5px;
+      font-weight: 400;
+    }
+  }
+  .item {
+    padding: 20px 0;
+    background: url("../img/quotes.png") no-repeat;
+    background-position: bottom right 30px;
+    .itemContent {
+      .itemTitle {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $FiraSansExtraCondensedFont;
+        margin-bottom: 10px;
+        margin-top: 5px;
+      }
+      .afterTitle {
+        font-size: 18px;
+        font-weight: 300;
+        font-family: $FiraSansExtraCondensedFont;
+        color: #555555;
+        margin-bottom: 50px;
+      }
+      .text {
+        font-size: 14px;
+      }
+
+    }
+    .controls {
+      a {
+        position: absolute;
+        bottom: 20px;
+        left: 45px;
+        text-transform: uppercase;
+        color: #202351;
+        font-size: 14px;
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+
+
+  }
+
+}
+
+.map {
+  .mapInfo {
+    background: rgba(0,0,0,0.8);
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    .title {
+      font-family: $FiraSansExtraCondensedFont;
+      font-size: 24px;
+      font-weight: 400;
+      margin: 0 0 40px 0;
+    }
+    .text {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}
+
+.footer {
+  margin-top: -10px;
+  height: 330px;
+  background: #202351;
+  @media screen and (max-width: $md) {
+    height: 100%;
+  }
+  .navigation {
+    padding-top: 80px;
+    ul {
+
+
+      li {
+        @media screen and (max-width: $md) {
+          display: block;
+          text-align: center;
+        }
+        a {
+          color: #ffffff;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .logo {
+    text-align: center;
+    margin: 30px 0;
+    img {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    .copy {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+}
+
+.tmenu.mp--on {
+  ul {
+    display: block;
+    li {
+       display: block;
+       a {
+         color: #ffffff;
+         display: block;
+         width: 100%;
+       }
+     }
+  }
+}
+
